@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AnaqMaps</title>
+    
+    <!-- Folhas de estilo do Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bibliotecas necessárias -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script> <!-- Para importar KML/KMZ -->
+
+    
+</head>
+<body>
+    <div class="layout">        
+        <label for="titulo"></label>
+        <input type="text" id="titulo" placeholder="Digite o título">       
+       
+        <!-- Botões para importar KML e KMZ -->
+        <button onclick="importarKML()">KML</button>        
+    </div>
+
+    <div id="map"></div>
+    <script src="script.js"></script>
+</body>
+</html>
